@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mathora Terms &amp; Conditions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #5b5f66;
+    --line: #e3e5e8;
+    --accent: #2f6fed;
+    --bg-soft: #f6f7f9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.65;
+    background: #fff;
+  }
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 56px;
+  }
+  header.masthead {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 28px;
+    margin-bottom: 8px;
+  }
+  header.masthead .brand {
+    font-size: 0.95em;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+  header.masthead h1 {
+    font-size: 2em;
+    margin: 6px 0 8px;
+  }
+  header.masthead .meta {
+    color: var(--muted);
+    font-size: 0.9em;
+  }
+  header.masthead .lede {
+    margin-top: 18px;
+    color: var(--muted);
+    max-width: 66ch;
+  }
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 0.82em;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .badge::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+  }
+  nav.toc {
+    position: sticky;
+    top: 32px;
+    align-self: start;
+    font-size: 0.88em;
+  }
+  nav.toc .toc-label {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.8em;
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav.toc li a {
+    display: block;
+    padding: 4px 0;
+    color: var(--muted);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    padding-left: 10px;
+    margin-left: -12px;
+  }
+  nav.toc li a:hover {
+    color: var(--ink);
+    border-left-color: var(--accent);
+  }
+  main { min-width: 0; }
+  section.clause {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+    scroll-margin-top: 24px;
+  }
+  section.clause:last-of-type { border-bottom: none; }
+  section.clause .num {
+    font-variant-numeric: tabular-nums;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.85em;
+    letter-spacing: 0.04em;
+  }
+  section.clause h2 {
+    font-size: 1.15em;
+    margin: 6px 0 12px;
+  }
+  section.clause p { margin: 0 0 14px; }
+  section.clause p:last-child { margin-bottom: 0; }
+  section.clause ul { margin: 0 0 14px; padding-left: 1.2em; }
+  section.clause ul li { margin-bottom: 6px; }
+  .callout {
+    background: #eef1fc;
+    border: 1px solid #d6ddf5;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-top: 16px;
+  }
+  .callout + .callout { margin-top: 10px; }
+  .callout .callout-label {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.78em;
+    font-weight: 700;
+    color: #33409e;
+    margin-bottom: 6px;
+  }
+  .callout p {
+    color: #313a6b;
+    margin: 0 !important;
+  }
+  .callout p + p { margin-top: 10px !important; }
+  footer.page-footer {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px 24px 48px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85em;
+  }
+  @media (max-width: 760px) {
+    .wrap { grid-template-columns: 1fr; padding: 32px 18px 64px; }
+    nav.toc { position: static; margin-bottom: 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="brand">Mathora</div>
+    <h1>Terms &amp; Conditions</h1>
+    <div class="meta">Effective August 27, 2026</div>
+    <p class="lede">
+      These Terms &amp; Conditions govern your use of Mathora, an offline mathematics study
+      app for students in classes 9 through 12. They're written for what the app actually
+      does today — no clauses about accounts, payments, or subscriptions the app doesn't have.
+    </p>
+    <div class="badge-row">
+      <span class="badge">No user accounts</span>
+      <span class="badge">No payments</span>
+      <span class="badge">No ads</span>
+      <span class="badge">No user-generated content</span>
+    </div>
+  </header>
+
+  <nav class="toc">
+    <div class="toc-label">On this page</div>
+    <ol>
+      <li><a href="#acceptance">Acceptance of terms</a></li>
+      <li><a href="#eligibility">Eligibility &amp; intended use</a></li>
+      <li><a href="#educational-purpose">Educational purpose</a></li>
+      <li><a href="#license">License to use the app</a></li>
+      <li><a href="#prohibited-use">Prohibited use</a></li>
+      <li><a href="#ip">Intellectual property</a></li>
+      <li><a href="#curriculum">Curriculum &amp; textbook disclaimer</a></li>
+      <li><a href="#ai-content">AI-assisted &amp; adapted content</a></li>
+      <li><a href="#accuracy">Accuracy &amp; no guarantee of results</a></li>
+      <li><a href="#trademarks">Third-party trademarks</a></li>
+      <li><a href="#no-accounts">No user accounts</a></li>
+      <li><a href="#third-party-services">Third-party services</a></li>
+      <li><a href="#ads-payments">Ads, payments &amp; subscriptions</a></li>
+      <li><a href="#termination">Termination &amp; suspension</a></li>
+      <li><a href="#warranties">Disclaimer of warranties</a></li>
+      <li><a href="#liability">Limitation of liability</a></li>
+      <li><a href="#indemnification">Indemnification</a></li>
+      <li><a href="#availability">Availability &amp; changes to the app</a></li>
+      <li><a href="#changes-terms">Changes to these terms</a></li>
+      <li><a href="#governing-law">Governing law &amp; disputes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section class="clause" id="acceptance">
+      <div class="num">01</div>
+      <h2>Acceptance of terms</h2>
+      <p>By downloading, installing, or using Mathora ("the App"), you agree to these Terms
+      &amp; Conditions. If you do not agree, please do not use the App. The App is provided by
+      RapidRise Tech ("we", "us", "our").</p>
+    </section>
+
+    <section class="clause" id="eligibility">
+      <div class="num">02</div>
+      <h2>Eligibility &amp; intended use</h2>
+      <p>Mathora is designed for students studying classes 9–12 mathematics under the
+      Pakistani curriculum, which typically means users roughly 14–19 years old. The App has
+      no minimum-age gate because it collects no personal information and requires no account
+      — there is nothing to verify age against. Students under the age of majority in their
+      jurisdiction should use the App with the involvement of a parent, guardian, or teacher
+      where appropriate.</p>
+    </section>
+
+    <section class="clause" id="educational-purpose">
+      <div class="num">03</div>
+      <h2>Educational purpose</h2>
+      <p>Mathora is a supplementary study aid. It is intended to help students review worked
+      mathematics problems and explanations alongside their regular schooling — not to replace
+      classroom instruction, a qualified teacher, or the student's official textbook.</p>
+    </section>
+
+    <section class="clause" id="license">
+      <div class="num">04</div>
+      <h2>License to use the app</h2>
+      <p>We grant you a personal, non-exclusive, non-transferable, revocable license to
+      install and use Mathora on your own devices, for your own personal, non-commercial study
+      use, in accordance with these Terms.</p>
+    </section>
+
+    <section class="clause" id="prohibited-use">
+      <div class="num">05</div>
+      <h2>Prohibited use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Copy, scrape, redistribute, republish, or resell the App's content in bulk,
+        including by automated means;</li>
+        <li>Reverse-engineer, decompile, or attempt to extract the App's underlying content
+        database beyond normal use of the App;</li>
+        <li>Use the App for any unlawful purpose, or in any way that could disable,
+        overburden, or impair it;</li>
+        <li>Remove or obscure any proprietary notices in the App.</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="ip">
+      <div class="num">06</div>
+      <h2>Intellectual property</h2>
+      <p>The Mathora application itself — its software, design, user interface, branding, and
+      the compilation and organization of its content — is the property of RapidRise Tech,
+      except where noted below.</p>
+      <div class="callout">
+        <div class="callout-label">Pre-launch action required — do not finalize this clause as-is</div>
+        <p>A source-code review found that a substantial portion of the App's worked
+        solutions is drawn from, or closely follows, publicly available third-party
+        mathematics reference material (see the accompanying Legal Risk Report). Until that
+        review is resolved, this Terms document should not assert blanket, exclusive
+        ownership over all educational content in the App — doing so would misstate the
+        actual situation and could itself create liability. The wording below is deliberately
+        narrower for that reason.</p>
+      </div>
+      <p>Underlying mathematical facts, formulas, and the Pakistani mathematics curriculum are
+      not owned by anyone and are freely usable by all. Rights to the original textbooks and
+      their specific published wording, where applicable, remain with their respective
+      publishers and curriculum authorities. Where any of the App's content has been adapted
+      from, or informed by, third-party educational reference material, that material is used
+      for non-commercial educational purposes and remains subject to the rights of its
+      original source.</p>
+    </section>
+
+    <section class="clause" id="curriculum">
+      <div class="num">07</div>
+      <h2>Curriculum &amp; textbook disclaimer</h2>
+      <p>Mathora's chapter and exercise structure follows the Pakistani mathematics curriculum
+      for classes 9–12 for the practical reason that this lets students find content that
+      matches their coursework. This does not mean Mathora is produced, reviewed, endorsed, or
+      approved by any textbook publisher, examination board, curriculum authority, school, or
+      government body. Mathora is an independent, unofficial study resource.</p>
+    </section>
+
+    <section class="clause" id="ai-content">
+      <div class="num">08</div>
+      <h2>AI-assisted &amp; adapted content</h2>
+      <p>Some explanations in the App were drafted with the assistance of AI tools. Others
+      were adapted from existing publicly available worked-solution references for the
+      relevant curriculum. This content has not been independently verified by a qualified
+      mathematics educator beyond the App's own development process.</p>
+      <div class="callout">
+        <div class="callout-label">Verify before publishing</div>
+        <p>This wording intentionally does not claim the content is "fully AI-generated and
+        original" or that it has undergone formal human expert review — the source code does
+        not support either claim. If a review process is introduced before launch, this
+        section should be updated to describe it accurately.</p>
+      </div>
+    </section>
+
+    <section class="clause" id="accuracy">
+      <div class="num">09</div>
+      <h2>Accuracy &amp; no guarantee of results</h2>
+      <p>We aim for mathematical accuracy, but errors are possible in any large collection of
+      worked solutions. The App is provided for study support, not as an authoritative
+      reference. Always verify important answers against your official textbook, your
+      teacher, or your examination board's own materials before relying on them for graded
+      work or exams. Use of the App does not guarantee any particular exam result, grade, or
+      academic outcome.</p>
+    </section>
+
+    <section class="clause" id="trademarks">
+      <div class="num">10</div>
+      <h2>Third-party trademarks</h2>
+      <p>Any references in the App or its materials to curriculum boards, textbook titles, or
+      publishers are used descriptively, to identify which syllabus the content follows — not
+      to claim affiliation, sponsorship, or endorsement by those organizations. All such names
+      remain the property of their respective owners.</p>
+    </section>
+
+    <section class="clause" id="no-accounts">
+      <div class="num">11</div>
+      <h2>No user accounts</h2>
+      <p>Mathora does not currently offer user accounts, sign-in, or profiles. Every
+      installation of the App functions independently, with no data tied to an identity.</p>
+    </section>
+
+    <section class="clause" id="third-party-services">
+      <div class="num">12</div>
+      <h2>Third-party services</h2>
+      <p>The App uses Google Fonts to render its typography, which may involve a request to
+      Google's servers as described in our Privacy Policy. We do not otherwise integrate any
+      third-party service, SDK, or API in the App.</p>
+    </section>
+
+    <section class="clause" id="ads-payments">
+      <div class="num">13</div>
+      <h2>Ads, payments &amp; subscriptions</h2>
+      <p>Mathora currently contains no advertisements, in-app purchases, or subscriptions. It
+      is free to use in full. If this changes in a future version, these Terms will be updated
+      accordingly before that version is released.</p>
+    </section>
+
+    <section class="clause" id="termination">
+      <div class="num">14</div>
+      <h2>Termination &amp; suspension</h2>
+      <p>Because there are no accounts, we cannot suspend or terminate an individual user's
+      access. We may, however, stop distributing, supporting, or updating the App at any time,
+      at our discretion, including removing it from an app store.</p>
+    </section>
+
+    <section class="clause" id="warranties">
+      <div class="num">15</div>
+      <h2>Disclaimer of warranties</h2>
+      <p>The App is provided "as is" and "as available," without warranties of any kind,
+      express or implied, including but not limited to warranties of merchantability, fitness
+      for a particular purpose, accuracy, or non-infringement, to the fullest extent permitted
+      by applicable law.</p>
+    </section>
+
+    <section class="clause" id="liability">
+      <div class="num">16</div>
+      <h2>Limitation of liability</h2>
+      <p>To the fullest extent permitted by applicable law, RapidRise Tech shall not be liable
+      for any indirect, incidental, special, consequential, or punitive damages, or any loss
+      of academic results, arising out of or related to your use of the App.</p>
+    </section>
+
+    <section class="clause" id="indemnification">
+      <div class="num">17</div>
+      <h2>Indemnification</h2>
+      <p>You agree to indemnify and hold harmless RapidRise Tech from any claims, damages, or
+      expenses arising from your misuse of the App or your violation of these Terms.</p>
+    </section>
+
+    <section class="clause" id="availability">
+      <div class="num">18</div>
+      <h2>Availability &amp; changes to the app</h2>
+      <p>Because Mathora works offline, most of the App's functionality does not depend on our
+      servers being available (we don't operate any). We may release updates that add, change,
+      or remove features, chapters, or content at any time.</p>
+    </section>
+
+    <section class="clause" id="changes-terms">
+      <div class="num">19</div>
+      <h2>Changes to these terms</h2>
+      <p>We may update these Terms from time to time. Continued use of the App after an update
+      constitutes acceptance of the revised Terms. We will update the effective date above
+      when changes are made.</p>
+    </section>
+
+    <section class="clause" id="governing-law">
+      <div class="num">20</div>
+      <h2>Governing law &amp; dispute resolution</h2>
+      <div class="callout">
+        <div class="callout-label">Requires business decision</div>
+        <p>Governing law should match the jurisdiction where RapidRise Tech is legally
+        established — commonly Pakistan given the App's target market, but this must be
+        confirmed rather than assumed, since it determines which courts and
+        consumer-protection rules actually apply.</p>
+      </div>
+      <p>These Terms are governed by the laws of [jurisdiction to be confirmed], without
+      regard to conflict-of-law principles. Any dispute arising from these Terms will be
+      subject to the exclusive jurisdiction of the courts of that jurisdiction, unless
+      applicable local consumer-protection law requires otherwise.</p>
+    </section>
+
+    <section class="clause" id="contact">
+      <div class="num">21</div>
+      <h2>Contact</h2>
+      <p>Questions about these Terms can be sent to
+      <a href="mailto:hello@rapidrisetech.com">hello@rapidrisetech.com</a>.</p>
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="page-footer">Mathora Terms &amp; Conditions — drafted from the application's
+actual source code on 27 Aug 2026. Sections marked "Verify before publishing" or "Pre-launch
+action required" must be resolved before this document is treated as final.</footer>
+
+</body>
+</html>
