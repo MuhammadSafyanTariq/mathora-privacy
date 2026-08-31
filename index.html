@@ -124,6 +124,25 @@
     background: var(--bg-soft);
     font-weight: 600;
   }
+  .callout {
+    background: #eef1fc;
+    border: 1px solid #d6ddf5;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-top: 16px;
+  }
+  .callout .callout-label {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.78em;
+    font-weight: 700;
+    color: #33409e;
+    margin-bottom: 6px;
+  }
+  .callout p {
+    color: #313a6b;
+    margin: 0 !important;
+  }
   footer.page-footer {
     max-width: 980px;
     margin: 0 auto;
@@ -188,6 +207,12 @@
       <p>Mathora ("the App") is developed and published by RapidRise Tech ("we", "us"). This
       Privacy Policy explains what information the App collects, why, and what happens to it.
       It applies to the Mathora mobile app on Android and iOS.</p>
+      <div class="callout">
+        <div class="callout-label">Verify before publishing</div>
+        <p>"RapidRise Tech" is inferred from the developer contact address on file
+        (hello@rapidrisetech.com) — confirm this is the correct registered publisher name
+        before this policy goes live, and replace it if not.</p>
+      </div>
     </section>
 
     <section class="clause" id="scope">
@@ -274,6 +299,13 @@
       <p>We do not use Firebase, any backend server, any analytics SDK, any advertising SDK,
       or any authentication provider. If that changes in a future version, this policy will
       be updated before that version is released.</p>
+      <div class="callout">
+        <div class="callout-label">Verify before publishing</div>
+        <p>This section is written to be accurate under either outcome: whether or not this
+        request actually completes on every platform depends on release-build permission
+        configuration that should be confirmed with a device test before launch. It is
+        disclosed here regardless, to avoid under-stating the app's real network behavior.</p>
+      </div>
     </section>
 
     <section class="clause" id="advertising">
@@ -357,6 +389,13 @@
       look up, export, or delete on request — a deletion or access request to us would return
       no records. If you'd like confirmation of that in writing, or have any concern about
       this, contact us using the details in §22.</p>
+      <div class="callout">
+        <div class="callout-label">Pre-launch action required</div>
+        <p>Neither store's "account deletion" requirement applies here in the way it does for
+        apps with sign-in — Mathora has no accounts to delete. Confirm this reasoning holds
+        when you complete Play Console's Data Safety form and App Store Connect's App Privacy
+        questionnaire, since both explicitly ask whether the app supports account creation.</p>
+      </div>
     </section>
 
     <section class="clause" id="children">
@@ -367,6 +406,12 @@
       information from any user, of any age, we do not knowingly collect personal information
       from children, and there is no mechanism in the app through which a child (or anyone)
       could submit personal information even if they wanted to.</p>
+      <div class="callout">
+        <div class="callout-label">Requires business decision</div>
+        <p>Whether to register Mathora under Google Play Families or Apple's Kids Category is
+        a store-listing decision, not something determined by this policy. See the
+        accompanying Legal Risk Report for a recommendation.</p>
+      </div>
     </section>
 
     <section class="clause" id="transfers">
@@ -399,13 +444,21 @@
       <h2>Contact</h2>
       <p>Questions about this policy can be sent to
       <a href="mailto:hello@rapidrisetech.com">hello@rapidrisetech.com</a>.</p>
+      <div class="callout">
+        <div class="callout-label">Verify before publishing</div>
+        <p>Confirm this is the support address you want listed publicly on two app stores,
+        and add a registered business address here if your jurisdiction's store requirements
+        call for one.</p>
+      </div>
     </section>
 
   </main>
 
 </div>
 
-<footer class="page-footer">Mathora · Privacy Policy</footer>
+<footer class="page-footer">Mathora Privacy Policy — drafted from the application's actual
+source code on 27 Aug 2026. Sections marked "Verify before publishing" or "Pre-launch action
+required" must be resolved before this document is treated as final.</footer>
 
 </body>
 </html>
