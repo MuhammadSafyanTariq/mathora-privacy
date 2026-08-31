@@ -5,52 +5,406 @@
 <title>Mathora Privacy Policy</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
-  h1 { font-size: 1.8em; }
-  h2 { font-size: 1.2em; margin-top: 2em; }
-  footer { margin-top: 3em; font-size: 0.85em; color: #666; }
+  :root {
+    --ink: #1a1a1a;
+    --muted: #5b5f66;
+    --line: #e3e5e8;
+    --accent: #2f6fed;
+    --bg-soft: #f6f7f9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.65;
+    background: #fff;
+  }
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 56px;
+  }
+  header.masthead {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 28px;
+    margin-bottom: 8px;
+  }
+  header.masthead .brand {
+    font-size: 0.95em;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+  header.masthead h1 {
+    font-size: 2em;
+    margin: 6px 0 8px;
+  }
+  header.masthead .meta {
+    color: var(--muted);
+    font-size: 0.9em;
+  }
+  header.masthead .lede {
+    margin-top: 18px;
+    color: var(--muted);
+    max-width: 66ch;
+  }
+  nav.toc {
+    position: sticky;
+    top: 32px;
+    align-self: start;
+    font-size: 0.88em;
+  }
+  nav.toc .toc-label {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.8em;
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+  }
+  nav.toc li a {
+    display: block;
+    padding: 4px 0;
+    color: var(--muted);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    padding-left: 10px;
+    margin-left: -12px;
+  }
+  nav.toc li a:hover {
+    color: var(--ink);
+    border-left-color: var(--accent);
+  }
+  main { min-width: 0; }
+  section.clause {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+    scroll-margin-top: 24px;
+  }
+  section.clause:last-of-type { border-bottom: none; }
+  section.clause .num {
+    font-variant-numeric: tabular-nums;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.85em;
+    letter-spacing: 0.04em;
+  }
+  section.clause h2 {
+    font-size: 1.15em;
+    margin: 6px 0 12px;
+  }
+  section.clause p { margin: 0 0 14px; }
+  section.clause p:last-child { margin-bottom: 0; }
+  section.clause ul { margin: 0 0 14px; padding-left: 1.2em; }
+  .table-scroll { overflow-x: auto; margin: 8px 0 16px; }
+  table.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.85em;
+    min-width: 720px;
+  }
+  table.data-table th, table.data-table td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  table.data-table th {
+    background: var(--bg-soft);
+    font-weight: 600;
+  }
+  footer.page-footer {
+    grid-column: 1 / -1;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85em;
+  }
+  @media (max-width: 760px) {
+    .wrap { grid-template-columns: 1fr; padding: 32px 18px 64px; }
+    nav.toc { position: static; margin-bottom: 8px; }
+  }
 </style>
 </head>
 <body>
+<div class="wrap">
 
-<h1>Privacy Policy for Mathora</h1>
-<p><strong>Last updated:</strong> August 30, 2026</p>
+  <header class="masthead">
+    <div class="brand">Mathora</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Effective August 27, 2026</div>
+    <p class="lede">
+      This policy describes what Mathora — an offline mathematics study app for Pakistani
+      students in classes 9 through 12 — does and does not do with information on your
+      device. It applies to the Mathora app on Android and iOS.
+    </p>
+  </header>
 
-<p>Mathora ("the app", "we", "us") is a study/math learning app for Android. This
-privacy policy explains how the app handles information when you use it.</p>
+  <nav class="toc">
+    <div class="toc-label">On this page</div>
+    <ol>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#scope">Scope</a></li>
+      <li><a href="#information-we-collect">Information we collect</a></li>
+      <li><a href="#information-you-provide">Information you provide</a></li>
+      <li><a href="#automatic">Automatically collected data</a></li>
+      <li><a href="#on-device-storage">On-device storage</a></li>
+      <li><a href="#third-party-services">Third-party services</a></li>
+      <li><a href="#advertising">Advertising, analytics &amp; tracking</a></li>
+      <li><a href="#accounts">Accounts &amp; sign-in</a></li>
+      <li><a href="#payments">Payments &amp; subscriptions</a></li>
+      <li><a href="#push">Push notifications</a></li>
+      <li><a href="#educational-content">Educational content &amp; usage</a></li>
+      <li><a href="#how-we-use">How we use information</a></li>
+      <li><a href="#how-we-share">How we share information</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#security">Data security</a></li>
+      <li><a href="#rights">Your rights &amp; data deletion</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#links">Third-party links</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
 
-<h2>Data Collection</h2>
-<p>Mathora does not collect, transmit, sell, or share any personal information
-or device data with us or any third party. The app has no network access and
-does not connect to the internet.</p>
+  <main>
 
-<h2>Data Stored on Your Device</h2>
-<p>Mathora stores some information locally on your device only, to make the
-app work (for example, your progress, saved preferences, and app settings).
-This data is stored using local device storage and a local database, stays
-on your device, and is never transmitted anywhere. Uninstalling the app
-removes this data.</p>
+    <section class="clause" id="introduction">
+      <div class="num">01</div>
+      <h2>Introduction</h2>
+      <p>Mathora ("the App") is developed and published by RapidRise Tech ("we", "us"). This
+      Privacy Policy explains what information the App collects, why, and what happens to it.
+      It applies to the Mathora mobile app on Android and iOS.</p>
+    </section>
 
-<h2>Permissions</h2>
-<p>Mathora does not request access to your camera, microphone, location,
-contacts, storage, or any other sensitive device permissions.</p>
+    <section class="clause" id="scope">
+      <div class="num">02</div>
+      <h2>Scope</h2>
+      <p>This policy covers the Mathora app itself. It does not cover the app stores you
+      downloaded it from (Google Play, the App Store), which have their own privacy
+      practices.</p>
+    </section>
 
-<h2>Third-Party Services</h2>
-<p>Mathora does not use any third-party analytics, advertising, or tracking
-services.</p>
+    <section class="clause" id="information-we-collect">
+      <div class="num">03</div>
+      <h2>Information we collect</h2>
+      <p>Mathora has no account system, no login, and no server it talks to for content. The
+      table below is a complete inventory, checked directly against the app's code.</p>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr><th>Data type</th><th>Collected?</th><th>Source</th><th>Purpose</th><th>Stored where</th><th>Shared with</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Name, email, phone</td><td>No</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Account / user ID</td><td>No</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Authentication data</td><td>No</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Precise/approximate location</td><td>No</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Advertising ID</td><td>No</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Analytics / usage events</td><td>No</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Crash reports</td><td>No</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Search history</td><td>No</td><td>Chapter search is filtered on-device only; nothing is logged or stored</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Favorites / bookmarks / progress</td><td>No</td><td>Not a feature the app currently has</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Push notification token</td><td>No</td><td>App has no notification capability</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Payment / subscription data</td><td>No</td><td>App has no payments or purchases</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>"Onboarding seen" flag</td><td>Yes</td><td>Set automatically after your first walkthrough</td><td>Skip the intro screens on future launches</td><td>On-device only (shared_preferences)</td><td>Nobody</td></tr>
+            <tr><td>App content database</td><td>Yes</td><td>Bundled with the app, copied to a local database on first launch</td><td>Let chapters/exercises load instantly and offline</td><td>On-device only (local SQLite file)</td><td>Nobody</td></tr>
+            <tr><td>Device IP address (incidental)</td><td>Conditional</td><td>Only if the device downloads a font file — see §7</td><td>Font delivery</td><td>Not stored by us</td><td>Google (font host)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-<h2>Children's Privacy</h2>
-<p>Mathora does not knowingly collect any information from anyone, including
-children, because the app does not collect data at all.</p>
+    <section class="clause" id="information-you-provide">
+      <div class="num">04</div>
+      <h2>Information you provide</h2>
+      <p>None. There is no sign-up form, profile, comment box, or upload feature anywhere in
+      the app. You cannot type anything into Mathora that leaves your device.</p>
+    </section>
 
-<h2>Changes to This Policy</h2>
-<p>If this policy changes, the updated version will be posted at this same
-URL with a revised "Last updated" date.</p>
+    <section class="clause" id="automatic">
+      <div class="num">05</div>
+      <h2>Automatically collected information</h2>
+      <p>Mathora contains no analytics library, no crash-reporting library, and no
+      device-fingerprinting code of any kind. We do not automatically receive usage
+      statistics, session logs, or diagnostic reports from your device. Standard information
+      the app stores themselves generate (install counts, aggregate ratings, crash rates from
+      the OS's own dashboards) is governed by Google's and Apple's own developer-facing
+      policies, not by Mathora's code.</p>
+    </section>
 
-<h2>Contact</h2>
-<p>If you have questions about this privacy policy, contact us at:
-<a href="mailto:hello@rapidrisetech.com">hello@rapidrisetech.com</a></p>
+    <section class="clause" id="on-device-storage">
+      <div class="num">06</div>
+      <h2>On-device storage</h2>
+      <p>Mathora stores two things locally, entirely within your device's app storage:</p>
+      <ul>
+        <li>A content database — the questions, exercises, and solutions for classes 9–12,
+        copied into a local SQLite database the first time you open the app, so every screen
+        after that works offline.</li>
+        <li>One preference flag — whether you've completed the onboarding walkthrough, so it
+        doesn't show again.</li>
+      </ul>
+      <p>Neither of these is transmitted anywhere. Uninstalling the app, or clearing its
+      storage from your device settings, deletes both completely.</p>
+    </section>
 
-<footer>Mathora &middot; Privacy Policy</footer>
+    <section class="clause" id="third-party-services">
+      <div class="num">07</div>
+      <h2>Third-party services</h2>
+      <p>Mathora's typography is rendered using Google Fonts (via the open-source
+      <code>google_fonts</code> Flutter package). Depending on your device and platform, the
+      app may need to download the font files it uses (Poppins) the first time they're
+      needed, which involves a request to Google's font-delivery servers and exposes your
+      device's IP address to Google in the same way any web request would, governed by
+      Google's Privacy Policy. No other data is sent as part of this request, and it is not
+      used by us for tracking or advertising.</p>
+      <p>We do not use Firebase, any backend server, any analytics SDK, any advertising SDK,
+      or any authentication provider. If that changes in a future version, this policy will
+      be updated before that version is released.</p>
+    </section>
+
+    <section class="clause" id="advertising">
+      <div class="num">08</div>
+      <h2>Advertising, analytics &amp; tracking</h2>
+      <p>Mathora shows no ads, contains no ad SDK, and does not use your data — or anyone's —
+      for advertising, personalization, or cross-app tracking. There is nothing to opt out
+      of, because nothing is being collected for these purposes in the first place.</p>
+    </section>
+
+    <section class="clause" id="accounts">
+      <div class="num">09</div>
+      <h2>Accounts &amp; sign-in</h2>
+      <p>Not applicable. Mathora does not offer account creation, sign-in, or any form of
+      authentication. Every user has the same experience without identifying themselves in
+      any way.</p>
+    </section>
+
+    <section class="clause" id="payments">
+      <div class="num">10</div>
+      <h2>Payments &amp; subscriptions</h2>
+      <p>Not applicable. Mathora has no in-app purchases, subscriptions, or paid tiers, and
+      processes no payment information.</p>
+    </section>
+
+    <section class="clause" id="push">
+      <div class="num">11</div>
+      <h2>Push notifications</h2>
+      <p>Not applicable. Mathora does not request notification permission and has no
+      notification functionality.</p>
+    </section>
+
+    <section class="clause" id="educational-content">
+      <div class="num">12</div>
+      <h2>Educational content &amp; usage</h2>
+      <p>The app does not track which class, chapter, exercise, or question you view. There
+      is no learning-progress, streak, or performance record kept anywhere — on your device
+      or off it.</p>
+    </section>
+
+    <section class="clause" id="how-we-use">
+      <div class="num">13</div>
+      <h2>How we use information</h2>
+      <p>The two items stored locally (§6) are used only to run the app itself: showing
+      content offline, and remembering that you've seen the onboarding screens. We have no
+      server to send anything to, and nothing described in this policy is used for profiling,
+      marketing, or any purpose beyond making the app work.</p>
+    </section>
+
+    <section class="clause" id="how-we-share">
+      <div class="num">14</div>
+      <h2>How we share information</h2>
+      <p>We do not sell, rent, or share personal information, because we do not collect any.
+      The one qualified exception is the incidental font-delivery request to Google described
+      in §7, which is a standard technical dependency, not a data-sharing arrangement we
+      control the content of.</p>
+    </section>
+
+    <section class="clause" id="retention">
+      <div class="num">15</div>
+      <h2>Data retention</h2>
+      <p>Everything Mathora stores lives on your device and stays there for as long as the
+      app is installed. There is no server-side copy to retain or expire, because there is no
+      server. Retention is entirely in your hands: uninstall the app, or clear its storage,
+      and it's gone.</p>
+    </section>
+
+    <section class="clause" id="security">
+      <div class="num">16</div>
+      <h2>Data security</h2>
+      <p>Because Mathora doesn't transmit personal data to us, the primary security surface
+      is your own device's built-in app sandboxing — the same protection every app on Android
+      and iOS relies on. We follow standard release practices but cannot make guarantees
+      about the security of your device itself.</p>
+    </section>
+
+    <section class="clause" id="rights">
+      <div class="num">17</div>
+      <h2>Your rights &amp; data deletion</h2>
+      <p>Because we hold no personal data about you on any server, there is nothing for us to
+      look up, export, or delete on request — a deletion or access request to us would return
+      no records. If you'd like confirmation of that in writing, or have any concern about
+      this, contact us using the details in §22.</p>
+    </section>
+
+    <section class="clause" id="children">
+      <div class="num">18</div>
+      <h2>Children's privacy</h2>
+      <p>Mathora is built for students in grades 9–12 — an age range that includes minors
+      under Pakistani and most other education systems. Because the app collects no personal
+      information from any user, of any age, we do not knowingly collect personal information
+      from children, and there is no mechanism in the app through which a child (or anyone)
+      could submit personal information even if they wanted to.</p>
+    </section>
+
+    <section class="clause" id="transfers">
+      <div class="num">19</div>
+      <h2>International data transfers</h2>
+      <p>Not applicable in the conventional sense — since no personal data is transmitted to
+      us, there is no cross-border transfer of your data by us to track. The only outbound
+      request the app can make is the font-delivery request in §7, to Google's own global
+      infrastructure.</p>
+    </section>
+
+    <section class="clause" id="links">
+      <div class="num">20</div>
+      <h2>Third-party links</h2>
+      <p>The app itself contains no outbound links to other websites or apps. This policy and
+      any store listing pages may link elsewhere (e.g. to this Privacy Policy from Google
+      Play); those destinations have their own privacy practices.</p>
+    </section>
+
+    <section class="clause" id="changes">
+      <div class="num">21</div>
+      <h2>Changes to this policy</h2>
+      <p>If Mathora's functionality changes in a way that affects what this policy says — for
+      example, if we ever add accounts, analytics, or ads — we will update this page and
+      change the effective date above before that version reaches the store.</p>
+    </section>
+
+    <section class="clause" id="contact">
+      <div class="num">22</div>
+      <h2>Contact</h2>
+      <p>Questions about this policy can be sent to
+      <a href="mailto:hello@rapidrisetech.com">hello@rapidrisetech.com</a>.</p>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">Mathora · Privacy Policy</footer>
+
+</div>
 </body>
 </html>
